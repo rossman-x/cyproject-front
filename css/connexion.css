@@ -1,0 +1,29 @@
+.logo {
+    position: relative;
+    padding: 30px 20px;
+   
+}
+body {
+  
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    
+    padding: 90px 90px;
+    width: 460px;
+    background: #EBEBEB;
+    border-radius: 10px;
+    position: relative
+}
+
+.label {
+
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.4;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+

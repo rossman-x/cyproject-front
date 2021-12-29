@@ -1,0 +1,85 @@
+body {
+  
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#pageBar {
+    padding: 0 5px;
+    border-right: 1px solid rgba(178,204,225,0.25);
+    font-size: 80%;
+    text-align: right;
+    text-transform: uppercase;
+    background-color: skyblue;
+}
+
+.logonav{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 2em;
+    text-transform: uppercase;
+    font-style:inherit;
+    font-weight: bold;
+}
+
+.menu {
+    background-color: gray;
+
+}
+
+.nav-link{
+    color: #fff;
+}
+
+.container {
+    display: flex;
+}
+
+.content {
+    background-color: lightgray;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+#sectioncontent{
+
+    width: 600px;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding-left: 10px;
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
