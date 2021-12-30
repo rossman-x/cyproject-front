@@ -5,10 +5,13 @@ $(document).ready(() => {
     const firstAndLastName = $("#firstAndLastName");
 
     const userId = localStorage.getItem('id_user');
-    if(!userId){
+    const roleUser = localStorage.getItem('role_user');
+    if (!userId || !roleUser) {
         window.location.href = "./connexion.html";
         return;
     }
+
+    $("#roleUser").text(roleUser);
 
     $.ajax({
         url: `${profileUrl}?user_id=${userId}`,
@@ -16,7 +19,7 @@ $(document).ready(() => {
     }).done((payload) => {
         firstAndLastName.text(payload.firstName + " " + payload.lastName)
     },).fail(() => {
-        alert("NOT OK !");
+        window.location.href = "./connexion.html";
     })
 
 })
