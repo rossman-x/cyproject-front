@@ -13,6 +13,8 @@ const connectWithEmailAndPassword = (email, password) => {
         url: `${authUrl}?email=${email}&password=${password}`,
         headers: {"Access-Control-Allow-Origin": "*"}
     }).done((payload) => {
+        console.log(payload);
+        localStorage.setItem('id_user', payload.id);
         window.location.href = "./etudiant.html";
     },).fail(() => {
         alert("NOT OK !");
