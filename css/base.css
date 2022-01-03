@@ -83,3 +83,12 @@ nav > ul li:hover .sous{
     content:" ▼";
     font-size: 12px;
 }
+.recep{
+    color: green; font-weight: bold; font-size: 25px; text-align: center; margin-top: 25px;
+}
+.container{
+    padding: 90px 90px;
+    position: relative;
+    width: 1000px;
+    background-color: #EBEBEB;
+}
