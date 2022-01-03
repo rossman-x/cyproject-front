@@ -10,6 +10,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style_messagerie.css">
+        <meta charset="UTF-8">
     </head>
     <body>
         
@@ -26,29 +27,27 @@
             <div>  
                 <div class="row" style="height: 30px;"></div> 
                 </div>
-                <form method="POST" action="">
+                <div>
                     <div class="contact-form">
                         <div class="input-fields">
-                            <input type="text" name="name" class="input" placeholder="Nom" value="">
 
-                            <input type="text" name="email" class="input" placeholder="Addresse Email" value="">
-
-                            <input type="text" name="subject" class="input" placeholder="Destinataire" value="">
-
-                            <input type="text" name="subject" class="input" placeholder="Sujet" value="">
+                            <select class="input" id="destin" placeholder="Destinataire">
+                                <option default value="">Destinataire</option>
+                            </select>
                         </div>
                         <div class="msg">
-                            <textarea   name="message" placeholder="Message" value=""></textarea>
-                            <button class="btn" name="envoyer">Envoyer</button>
+                            <textarea  id="content" name="message" placeholder="Message" value=""></textarea>
+                            <button class="btn" onclick="sendMessage()" name="envoyer">Envoyer</button>
                             <button type="button" class="btn btn-light btn-sm" onclick='window.location.href="index.html";'>Accueil
                             </button>
                         </div>
                     </div>
-                </form>
+                </div>
                 </div>
             </div>
         </div>
-     
+        <script src="js/jquery.js"></script>
+        <script src="js/messages.js"></script>
 
     </body>
 </html>
