@@ -92,3 +92,13 @@ nav > ul li:hover .sous{
     width: 1000px;
     background-color: #EBEBEB;
 }
+
+.conteneur{
+    padding: 90px 90px;
+    width: 460px;
+    background: #EBEBEB;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 500px;
+    margin-top: 50px;
+}
