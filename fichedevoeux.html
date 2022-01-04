@@ -57,33 +57,33 @@
 
 <div style="height: 70vh;width:400px;border-radius: 10px; margin-left: 550px; background-color: #EBEBEB;" class="row">
     <div class="m-auto">
-        <form class="row g-3">
+        <div class="row g-3">
             <p style="color: green;">Choisissez votre option pour la rentrée prochaine : </p>
             <div class="col-12">
-                <label for="inputAddress" class="form-label">Option N°1 </label>
-                <select id="inputState" class="form-select option-class">
+                <label for="firstWish" class="form-label">Option N°1 </label>
+                <select id="firstWish" class="form-select option-class">
                 </select>
             </div>
             <div class="col-12">
-                <label for="inputAddress" class="form-label">Option N°2 </label>
-                <select id="inputState" class="form-select option-class">
+                <label for="secondWish" class="form-label">Option N°2 </label>
+                <select id="secondWish" class="form-select option-class">
                 </select>
             </div>
             <div class="col-12">
-                <label for="inputAddress" class="form-label">Option N°3 </label>
-                <select id="inputState" class="form-select option-class">
+                <label for="thirdWish" class="form-label">Option N°3 </label>
+                <select id="thirdWish" class="form-select option-class">
                 </select>
             </div>
             <div class="col-12">
-                <label for="inputAddress" class="form-label">Option N°4 </label>
-                <select id="inputState" class="form-select option-class">
+                <label for="forthWish" class="form-label">Option N°4 </label>
+                <select id="forthWish" class="form-select option-class">
                 </select>
             </div>
 
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Valider</button>
+                <button onclick="saveWishes()" type="submit" class="btn btn-primary">Valider</button>
             </div>
-        </form>
+        </div>
     </div>
 </div>
 <script src="js/jquery.js"></script>

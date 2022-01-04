@@ -16,7 +16,16 @@ const connectWithEmailAndPassword = (email, password) => {
         localStorage.setItem('id_user', payload.id);
         localStorage.setItem('speciality_user', payload.speciality.id);
         localStorage.setItem('role_user', payload.status);
-        window.location.href = "./etudiant.html";
+        if(payload.status == "ETUDIANT"){
+            window.location.href = "./etudiant.html";
+            return;
+        }
+        if(payload.status == "RESPO_ADMIN"){
+            window.location.href = "./respo_admin.html";
+        }
+        if(payload.status == "ADMIN"){
+            window.location.href = "./admin.html";
+        }
     },).fail(() => {
         alert("NOT OK !");
     })
