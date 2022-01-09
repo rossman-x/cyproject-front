@@ -16,10 +16,9 @@ $(document).ready(() => {
         url: `${profileUrl}?user_id=${userId}`,
         headers: {"Access-Control-Allow-Origin": "*"}
     }).done((payload) => {
-        $("#firstAndLastName").text(payload.firstName + " " + payload.lastName);
+        $("#firstName").text(payload.firstName);
         $("#email").text(payload.emailAddress);
-        $("#birthday").text((new Date(payload.birthdayDate)).toString());
-        $("#speciality").text(payload.speciality.name);
+        $("#lastName").text(payload.lastName);
     },).fail(() => {
         window.location.href = "./connexion.html";
     })

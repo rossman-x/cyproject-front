@@ -31,7 +31,7 @@
                 <a href="option.html" class="nav-link">Options</a>
             </li>
             <li class="deroulant">
-                <a  class="nav-link active" aria-current="page" href="#">Orientation</a>
+                <a class="nav-link active" aria-current="page" href="#">Orientation</a>
                 <ul class="sous">
                     <li><a href="fichedevoeux.html">Fiche de voeux</a></li>
                     <li><a href="orientation.html">Résultat Orientation</a></li>
@@ -44,36 +44,43 @@
                 <a class="nav-link" href="messagerie.html">Messagerie</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="message.html">Boîte de réception</a>
-              </li>
+                <a class="nav-link" href="message_respo.html">Boîte de réception</a>
+            </li>
         </ul>
     </nav>
 </div>
-<div style="height: 60vh;width:400px;border-radius: 10px; margin-left: 550px; margin-top: 20px; background-color: #EBEBEB;" class="row">
+<div style="height: 60vh;width:400px;border-radius: 10px; margin-left: 550px; margin-top: 20px; background-color: #EBEBEB;"
+     class="row">
     <div class="m-auto">
         <form class="row g-3">
             <p style="color: green;">Vous pouvez faire un recours ici : </p>
             <div class="col-12">
-                <label for="inputAddress" class="form-label">A : </label>
-                <input type="email" name="email">
+                <label for="destin" class="form-label">Destinataire</label>
+                <select class="input" id="destin" placeholder="Destinataire">
+                    <option default value="">Destinataire</option>
+                </select>
             </div>
             <div class="col-12">
-                <label for="inputAddress" class="form-label">Objet</label>
-                <input type="text" >
+                <label for="option" class="form-label">Option requise</label>
+                <select class="input" id="option" placeholder="Option">
+                    <option default value="">Option</option>
+                </select>
             </div>
             <div class="col-12">
-                <label for="inputAddress" class="form-label">Message </label>
-                
-                <input type="text" style="width: 80%;height:150px" name="contenu">
+                <label for="content" class="form-label">Message </label>
+
+                <input type="text" style="width: 80%;height:150px" id="content">
             </div>
 
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Valider</button>
+                <button type="submit" onclick="sendMessage()" class="btn btn-primary">Valider</button>
             </div>
         </form>
     </div>
 </div>
-   
+
+<script src="js/jquery.js"></script>
+<script src="js/recours.js"></script>
 </body>
 <footer style="margin-top:250px">
     <center>

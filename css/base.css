@@ -1,18 +1,18 @@
 body {
-  
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #pageBar {
     padding: 0 5px;
-    border-right: 1px solid rgba(178,204,225,0.25);
+    border-right: 1px solid rgba(178, 204, 225, 0.25);
     font-size: 80%;
     text-align: right;
     text-transform: uppercase;
     background-color: skyblue;
 }
 
-.logonav{
+.logonav {
     padding-left: 20px;
     padding-bottom: 20px;
     height: 80px;
@@ -20,7 +20,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px 2em;
     text-transform: uppercase;
-    font-style:inherit;
+    font-style: inherit;
     font-weight: bold;
 }
 
@@ -29,7 +29,7 @@ body {
 
 }
 
-.nav-link{
+.nav-link {
     color: #fff;
 }
 
@@ -43,7 +43,7 @@ body {
     box-sizing: border-box;
 }
 
-#sectioncontent{
+#sectioncontent {
 
     width: 600px;
     margin-top: 30px;
@@ -53,7 +53,7 @@ body {
     font-weight: bold;
 }
 
-.sous{
+.sous {
     display: none;
     box-shadow: 0px 1px 2px #CCC;
     background-color: white;
@@ -62,43 +62,51 @@ body {
     z-index: 1000;
 }
 
-nav > ul li:hover .sous{
+nav > ul li:hover .sous {
     display: block;
 }
 
-.sous li{
+.sous li {
     float: none;
     width: 100%;
     text-align: left;
 }
-.sous a{
+
+.sous a {
     padding: 10px;
     border-bottom: none;
 }
-.sous a:hover{
+
+.sous a:hover {
     border-bottom: none;
-    background-color: RGBa(200,200,200,0.1);
+    background-color: RGBa(200, 200, 200, 0.1);
 }
-.deroulant > a::after{
-    content:" ▼";
+
+.deroulant > a::after {
+    content: " ▼";
     font-size: 12px;
 }
-.recep{
-    color: green; font-weight: bold; font-size: 25px; text-align: center; margin-top: 25px;
+
+.recep {
+    color: green;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 25px;
 }
-.container{
+
+.container {
     padding: 90px 90px;
     position: relative;
     width: 1000px;
     background-color: #EBEBEB;
 }
 
-.conteneur{
+.conteneur {
     padding: 90px 90px;
-    width: 460px;
+    width: 40%;
+    margin: auto;
     background: #EBEBEB;
     border-radius: 10px;
     position: relative;
-    margin-left: 500px;
-    margin-top: 50px;
 }
